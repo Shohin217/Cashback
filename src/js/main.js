@@ -26,4 +26,4 @@ if (cash > cashbackLimit){
     cash = cashbackLimit;
 }
 
-console.log (`Кэшбэк равен: `+cash);
+console.log (`Кэшбэк равен: ${cash}`);
