@@ -1,0 +1,23 @@
+{
+  "name": "cashback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shohin217/Cashback.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shohin217/Cashback/issues"
+  },
+  "homepage": "https://github.com/Shohin217/Cashback#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
