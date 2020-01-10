@@ -1,6 +1,6 @@
 
 
-let drives = {
+const drives = {
     flash: 250,
     HDD: 550,
     SSD: 1000,
