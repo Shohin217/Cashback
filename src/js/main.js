@@ -24,6 +24,6 @@ let cash = (flash.price*flash.category)+(HDD.price*HDD.category)+(SSD.price*SSD.
 
 if (cash > cashbackLimit){
     cash = cashbackLimit;
-};
+}
 
 console.log (`Кэшбэк равен: `+cash);
