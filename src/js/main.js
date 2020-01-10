@@ -1,15 +1,24 @@
 
 
-const drives = {
-    flash: 250,
-    HDD: 550,
-    SSD: 1000,
-}
-const regular =  drives.flash * 0.01;
-const increased = drives.HDD * 0.05;
-const special = drives.SSD * 0.3;
+const regular = 0.01;
+const increased = 0.05;
+const special = 0.3;
 
-let cash = regular+increased+special;
+const flash = {
+    price: 250,
+    category: regular
+};
+
+const HDD = {
+    price: 550,
+    category: increased
+};
+
+const SSD = {
+    price: 1000,
+    category: special
+};
+let cash = (flash.price*flash.category)+(HDD.price*HDD.category)+(SSD.price*SSD.category)
 
 if (cash > 3000){
     cash = 3000;
