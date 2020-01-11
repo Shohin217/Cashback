@@ -1,27 +1,27 @@
-const regular = 0.01;
-const increased = 0.05;
-const special = 0.3;
+const regularPercent = 0.01;
+const increasedPercent = 0.05;
+const specialPercent = 0.3;
 const cashbackLimit = 3000;
 
 const purchases = [
     flash = {
-        price: 250,
-        category: regular
+        amount: 250,
+        category: regularPercent
     },
     HDD = {
-        price: 550,
-        category: increased
+        amount: 550,
+        category: increasedPercent
     },
     SSD = {
-        price: 1000,
-        category: special
+        amount: 1000,
+        category: specialPercent
     }
 ];
 
 let cashback = 0;
 
-for (let cashPercent of purchases){
-    cashback += cashPercent.price*cashPercent.category;
+for (let cashbackItem of purchases){
+    cashback += cashbackItem.amount*cashbackItem.category;
 }
 
 if (cashback > cashbackLimit){
