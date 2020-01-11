@@ -1,29 +1,32 @@
-
-
 const regular = 0.01;
 const increased = 0.05;
 const special = 0.3;
 const cashbackLimit = 3000;
 
-const flash = {
-    price: 250,
-    category: regular
-};
+const purchases = [
+    flash = {
+        price: 250,
+        category: regular
+    },
+    HDD = {
+        price: 550,
+        category: increased
+    },
+    SSD = {
+        price: 1000,
+        category: special
+    }
+];
 
-const HDD = {
-    price: 550,
-    category: increased
-};
+let cashback = 0;
 
-const SSD = {
-    price: 1000,
-    category: special
-};
-
-let cash = (flash.price*flash.category)+(HDD.price*HDD.category)+(SSD.price*SSD.category);
-
-if (cash > cashbackLimit){
-    cash = cashbackLimit;
+for (let cashPercent of purchases){
+    cashback += cashPercent.price*cashPercent.category;
 }
 
-console.log (`Кэшбэк равен: ${cash}`);
+if (cashback > cashbackLimit){
+    cashback = cashbackLimit;
+}
+
+console.log (`Кэшбэк равен: ${cashback}`);
+
